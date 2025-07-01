@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        android:background="@color/color6"
+        android:paddingBottom="50dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/editclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_cancel_24"
+            android:background="@android:color/transparent"
+            android:layout_gravity="right"
+            />
+
+
+        <TextView
+            android:fontFamily="@font/baloo_2_extrabold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Update Task"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:fontFamily="@font/baloo_2_extrabold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Task title" />
+
+        <EditText
+            android:elevation="2dp"
+            android:id="@+id/UpdateTaskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:fontFamily="@font/baloo_2_extrabold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Task description" />
+
+        <EditText
+            android:id="@+id/UpdateTaskDescription"
+            android:layout_width="match_parent"
+            android:elevation="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:fontFamily="@font/baloo_2_extrabold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task date" />
+
+                <TextView
+                    android:elevation="2dp"
+                    android:id="@+id/UpdateTaskDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:fontFamily="@font/baloo_2_extrabold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task deadline" />
+
+                <EditText
+                    android:elevation="2dp"
+                    android:id="@+id/UpdateTaskDeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/baloo_2_extrabold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Time" />
+
+        <EditText
+            android:elevation="2dp"
+            android:id="@+id/UpdateTaskTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:fontFamily="@font/baloo_2_extrabold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="How difficult the task is?" />
+
+        <RatingBar
+            android:id="@+id/UpdateratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="0" />
+
+        <Button
+            android:id="@+id/UpdateTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Edit task" />
+
+    </LinearLayout>
+</ScrollView>

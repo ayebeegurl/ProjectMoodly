@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color5"
+    android:orientation="vertical"
+    android:elevation="10dp">
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_cancel_24"
+        android:background="@android:color/transparent"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_2_extrabold"
+            android:text="How's your mood today?"
+            android:textColor="@color/color4"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="80dp">
+        <ImageButton
+            android:id="@+id/happy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_mood_24"
+            android:background="@android:color/transparent"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Happy"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/sad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_mood_bad_24"
+                    android:background="@android:color/transparent"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Sad"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
